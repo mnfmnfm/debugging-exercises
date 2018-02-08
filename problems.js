@@ -34,8 +34,8 @@ console.log("finding the max in [12,6,14,3] gives", findMax([12,6,14,3]), "(shou
 
 // Problem 4. New approach for finding the max.
 function findMaxTwo(arr) {
-  let max = arr[0];
-  for(let num in arr) {
+  let max = 0;
+  for(let num of arr) {
     if(num > max) {
       max = num;
     } else {
